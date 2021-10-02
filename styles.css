@@ -148,18 +148,18 @@ h3 {
 }
 
 .btn {
-  font-size: 100%;
   width: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
-  background: #405eff;
+  background: #3c94fc;
   border: 0;
   outline: 0;
   text-align: center;
   height: 44px;
   font-weight: 500;
-  border-radius: 3px;
+  border-radius: 5px;
   color: #fff;
   box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+  font-size: 100%;
 }
