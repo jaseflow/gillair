@@ -24,10 +24,11 @@ ol {
 
 
 h1 {
-  font-size: 2.5rem;
+  font-size: 2.25rem;
   line-height: 1.1;
   margin-bottom: 1rem;
   font-weight: 900;
+  font-family: 'Roboto', sans-serif;
 }
 
 h2 {
@@ -60,10 +61,9 @@ h3 {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  height: calc(85vh);
+  height: calc(70vh);
   position: relative;
   z-index: 50;
-  font-family: 'Roboto', sans-serif;
 }
 
 .hero__content {
