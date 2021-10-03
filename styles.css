@@ -61,7 +61,7 @@ h3 {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  height: calc(70vh);
+  height: calc(85vh);
   position: relative;
   z-index: 50;
 }
