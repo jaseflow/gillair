@@ -5,8 +5,7 @@
 }
 
 body {
-  font-family: sans-serif;
-  line-height: 1.5;
+  font-family: sans-serif; line-height: 1.5;
   color: #0C2440;
 }
 
@@ -191,8 +190,16 @@ h3 {
   font-size: 110%;
 }
 
+.blob {
+  margin-bottom: 2rem;
+}
+
 .blob__img {
-  margin-left: -2rem;
-  margin-right: -2rem;
+  margin-left: -1rem;
+  margin-right: -1rem;
   margin-bottom: 1rem;
+}
+
+.blob p {
+  font-size: 14px;
 }
