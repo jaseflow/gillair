@@ -24,8 +24,9 @@ ol {
 
 
 h1 {
-  font-size: 2rem;
+  font-size: 2.75rem;
   margin-bottom: 0.5rem;
+  font-family: 'Roboto', sans-serif;
 }
 
 h2 {
@@ -64,7 +65,7 @@ h3 {
 }
 
 .hero__content {
-  font-size: 17px;
+  font-size: 21px;
   line-height: 1.2;
   opacity: 0;
   font-weight: 100;
