@@ -7,10 +7,15 @@
 body {
   font-family: sans-serif; line-height: 1.5;
   color: #0C2440;
+  font-size: 15px;
 }
 
 img {
   max-width: 100%;
+}
+
+.flat {
+  margin-bottom: 0 !important;
 }
 
 h2,
@@ -19,7 +24,6 @@ ul,
 ol {
   margin-bottom: 1.5rem;
 }
-
 
 h1 {
   font-size: 2.25rem;
@@ -33,7 +37,6 @@ h2 {
   font-size: 1.5rem;
   font-weight: 400;
   margin-bottom: 0.5rem;
-  text-align: center;
 }
 
 h3 {
@@ -44,6 +47,33 @@ h3 {
 
 .text-centered {
   text-align: center;
+}
+
+.input {
+  height: 44px;
+  padding: 0 1rem;
+  border-radius: 5px;
+  border: 0;
+  background: #fff;
+  font-size: 100%;
+  outline: 0;
+}
+
+textarea {
+  background: #fff;
+  padding: 1rem;
+  border: 0;
+  border-radius: 5px;
+  resize: none;
+  font-size: 100%;
+  font-family: inherit;
+  outline: 0;
+}
+
+.form__group {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 1rem;
 }
 
 .hero {
@@ -119,19 +149,6 @@ h3 {
   animation: showLogo 500ms 375ms ease forwards;
 }
 
-.hero__corner {
-  background: url('frost.jpg');
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  z-index: 5;
-}
-
 .hero__corner2 {
   background: rgba(10, 43, 83, 0.925);
   width: 100%;
@@ -183,6 +200,7 @@ h3 {
   outline: 0;
   text-align: center;
   height: 44px;
+  text-decoration: noner
   font-weight: 500;
   border-radius: 5px;
   color: #fff;
@@ -209,13 +227,83 @@ h3 {
   display: block;
 }
 
-.blob p {
-  font-size: 14px;
-}
-
 .intro {
   font-size: 18px;
   margin-left: -1rem;
   margin-right: -1rem;
   font-weight: 100;
+}
+
+.contact {
+  background: #f2f2f2;
+}
+
+.hours li {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.form {
+  margin-bottom: 40px;
+}
+
+.socials__nav a {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  margin-top: 0.5rem;
+  color: rgba(255,255,255,0.75);
+}
+
+.socials__nav a:first-child {
+  margin-top: 0;
+}
+
+.socials__nav i {
+  width: 1.5rem;
+  text-align: center;
+  margin-right: 0.5rem;
+  font-size: 1.15rem;
+}
+
+.footer {
+  color: rgba(255,255,255,0.75);
+  background: rgba(10, 43, 83, 0.925);
+}
+
+.footer h2 {
+  color: #fff;
+}
+
+.map {
+  display: block;
+  margin-bottom: 1rem;
+  box-shadow: 0 5px 10px rgba(0,0,0,0.25);
+  color: #fff;
+  text-decoration: none;
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+.map img {
+  display: block;
+}
+
+.map__address {
+  background: rgba(255,255,255,0.25);
+  text-align: center;
+  padding: 0.5rem 1rem;
+}
+
+@media(min-width: 768px) {
+  .socials__nav {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: 2rem;
+  }
+
+  .socials__nav a:nth-child(2) {
+    margin-top: 0;
+  }
 }

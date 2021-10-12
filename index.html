@@ -34,7 +34,7 @@
   </section>
   <section class="services">
     <div class="container">
-      <h2>How we can help</h2>
+      <h2 class="text-centered">How we can help</h2>
       <p class="text-centered intro">We specialise in ducted and split air conditioning as well as ceiling
       cassettees. Anything needed to keep you cool.</p>
       <div class="blob">
@@ -64,5 +64,84 @@
       </div>
     </div>
   </section>
+  <section class="contact">
+    <div class="container">
+      <form id="my-form" action="https://formspree.io/f/xayakgbk" method="POST" class="form">
+        <h2>Get a quote</h2>
+        <p>Leave a quick message below explaining how we can help you and we
+        will get back to you as soon as possible.</p>
+        <div class="form__group">
+          <label>Name</label>
+          <input class="input" type="text" name="name" />
+        </div>
+        <div class="form__group">
+          <label>Email</label>
+          <input class="input" type="email" name="email" />
+        </div>
+        <div class="form__group">
+          <label>Phone</label>
+          <input class="input" type="tel" name="phone" />
+        </div>
+        <div class="form__group">
+          <label>Address</label>
+          <input class="input" type="text" name="address" />
+        </div>
+        <div class="form__group">
+          <label>Message</label>
+          <textarea name="message" cols="30" rows="10" resize="none"></textarea>
+        </div>
+        <button id="my-form-button" class="btn">Submit</button>
+        <p id="my-form-status"></p>
+      </form>
+    </div>
+  </section>
+  <footer class="footer">
+    <div class="container">
+      <div>
+        <h2>Hours</h2>
+        <ul class="hours">
+          <li>Monday - Friday <span>8am - 5pm</span></li>
+          <li>Saturday - Sunday <span>Appointment only</span></li>
+        </ul>
+      </div>
+      <h2>Contact us</h2>
+      <a href="https://goo.gl/maps/PLeHLdneLP43nhNb8" class="map">
+        <img
+        src="//maps.googleapis.com/maps/api/staticmap?center=-28.8700354,153.5575034&zoom=16&size=600x300&key=AIzaSyBGuVkz3aMPan4pOd1N-ItY3X7UmnJY4ak" alt="">
+        <div class="map__address">
+          <p class="flat">161 River St, Ballina NSW 2478</p>
+        </div>
+      </a>
+      <nav class="socials__nav">
+        <a href="mailto:kirat@gillair.com.au"><i class="fas fa-envelope"></i> admin@beachsidebargains.com.au</a>
+        <a href="tel:(02)6686-6650"><i class="fas fa-phone"></i> (02) 6686 6650</a>
+        <a href="https://www.facebook.com/beachsidebargainsballina/"><i class="fab fa-facebook"></i> beachsidebargainsballina</a>
+        <a href="https://www.instagram.com/beachside.bargains/"><i class="fab fa-instagram"></i> beachside.bargains</a>
+      </nav>
+    </div>
+  </footer>
+  <!-- Place this script at the end of the body tag -->
+  <script>
+      var form = document.getElementById("my-form");
+      
+      async function handleSubmit(event) {
+        event.preventDefault();
+        var status = document.getElementById("my-form-status");
+        var data = new FormData(event.target);
+        fetch(event.target.action, {
+          method: form.method,
+          body: data,
+          headers: {
+              'Accept': 'application/json'
+          }
+        }).then(response => {
+          status.innerHTML = "Thanks for your submission!";
+          form.reset()
+        }).catch(error => {
+          status.innerHTML = "Oops! There was a problem submitting your form"
+        });
+      }
+      form.addEventListener("submit", handleSubmit)
+  </script>
 </body>
 </html>
