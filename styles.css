@@ -408,17 +408,12 @@ textarea {
   .footer__container {
     display: flex;
     flex-direction: row-reverse;
+    gap: 60px;
   }
 
+  .footer__container .location,
   .footer__container .details {
     flex: 1;
-    padding-left: 40px;
-  }
-
-  .socials__nav {
-    display: flex;
-    align-items: center;
-    justify-content: center;
   }
 
   .hidden-mobile {
@@ -460,8 +455,9 @@ textarea {
   }
 
   .blob {
-    display: flex;
-    gap: 40px;
+    display: grid;
+    grid-column-gap: 60px;
+    grid-template-columns: 1fr 1fr;
     margin-bottom: 3rem;
   }
 
