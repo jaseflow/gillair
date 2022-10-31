@@ -386,15 +386,35 @@ textarea {
   color: #fff;
 }
 
+.footer__footnotes {
+  padding-top: 40px;
+  border-top: 1px solid rgba(255,255,255,0.1);
+  font-size: 12px;
+}
+
 .footer__licences {
   display: flex;
   flex-direction: column;
-  gap: 20px;
+  gap: 10px;
   justify-content: center;
   text-align: center;
-  font-size: 12px;
-  padding-top: 40px;
-  border-top: 1px solid rgba(255,255,255,0.1);
+}
+
+.crypto {
+  text-align: center;
+  font-size: 13px;
+}
+
+.crypto__logos {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+  margin-bottom: 1rem;
+}
+
+.crypto__logos img {
+  max-height: 50px;
 }
 
 .map {
@@ -544,6 +564,30 @@ textarea {
 
   .footer__licences {
     flex-direction: row;
+  }
+
+  .footer__footnotes {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .crypto {
+    display: flex;
+    align-items: center;
+    flex-direction: row-reverse;
+    gap: 1rem;
+  }
+
+  .crypto img { max-height: 32px } 
+
+  .crypto p { margin: 0 }
+
+  .crypto__logos {
+    gap: 1rem;
+    align-items: center;
+    margin: 0;
   }
   
 }
